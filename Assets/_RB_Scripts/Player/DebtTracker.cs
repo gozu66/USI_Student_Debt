@@ -28,4 +28,16 @@ public class DebtTracker : MonoBehaviour
         print(debtString);
     }
 
+    public void Cost(int amount)
+    {
+        debt += amount;
+        debtString = debt.ToString() + " €";
+        print(debtString);
+    }
+
+    int numTaxis;
+    public void CountTaxi()
+    {
+        numTaxis++;
+    }
 }

@@ -23,7 +23,7 @@ GameObject:
   - 102: {fileID: 102000012806224412}
   - 114: {fileID: 114000012248999534}
   m_Layer: 0
-  m_Name: Coin Gib
+  m_Name: Neg Cash Gib
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012181672628}
-  m_Text: 250
+  m_Text: -50
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -91,7 +91,7 @@ TextMesh:
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Color:
     serializedVersion: 2
-    rgba: 4278802784
+    rgba: 4279780046
 --- !u!114 &114000012248999534
 MonoBehaviour:
   m_ObjectHideFlags: 1

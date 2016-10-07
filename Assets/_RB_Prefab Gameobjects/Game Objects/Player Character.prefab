@@ -25,6 +25,7 @@ GameObject:
   - 114: {fileID: 114000013499869286}
   - 58: {fileID: 58000011151047860}
   - 114: {fileID: 114000013320216526}
+  - 114: {fileID: 114000010731439652}
   m_Layer: 9
   m_Name: Player Character
   m_TagString: Player
@@ -87,11 +88,11 @@ Rigidbody2D:
   m_Mass: 5
   m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 1.5
+  m_GravityScale: 1.8
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!58 &58000011151047860
 CircleCollider2D:
@@ -135,6 +136,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.7, y: 0.1}
+--- !u!114 &114000010731439652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010991768496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea7b96d73ca72249924b797b3b7c8e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gib: {fileID: 1000012181672628, guid: 75c7d1e381ed71140ae6a3a973ba67e5, type: 2}
+  force: 50
 --- !u!114 &114000012772590948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,7 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 5
   airControlSpeed: 3
-  jumpForce: 50
+  jumpForce: 55
   layerMask:
     serializedVersion: 2
     m_Bits: 4294966783

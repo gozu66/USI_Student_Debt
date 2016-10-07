@@ -23,6 +23,7 @@ public class LayerOrderForce : MonoBehaviour
             myT.position = new Vector2(myT.position.x, myT.position.y + newY);
             yield return null;
         }
+
         Destroy(gameObject);
     }
 }

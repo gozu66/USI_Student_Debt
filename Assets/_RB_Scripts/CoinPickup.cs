@@ -10,8 +10,9 @@ public class CoinPickup : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            print("???");
             spawnEffects();
+            DebtTracker._instance.Cost(250);
+
             Destroy(gameObject);
         }
     }
