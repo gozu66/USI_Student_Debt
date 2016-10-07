@@ -14,21 +14,11 @@ public class PlayerDamage : MonoBehaviour
     {
         if(other.collider.tag == "Screen Edge")
         {
-            //ScreenEdgeTakeDamage();
             StartCoroutine("ScreenEdgeDamage");
         }
     }
 
     public float force;
-    void ScreenEdgeTakeDamage()
-    {
-        //Make palyer sprite flash opacity
-        //playerMove.canMove = false;
-        rbody.velocity = Vector2.zero;
-        rbody.AddForce((Vector2.right) * force, ForceMode2D.Impulse);
-        //playerMove.canMove = true;
-    }    
-
     IEnumerator ScreenEdgeDamage()
     {
         //Make palyer sprite flash opacity

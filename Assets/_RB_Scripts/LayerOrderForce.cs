@@ -20,7 +20,6 @@ public class LayerOrderForce : MonoBehaviour
         {
             timer += Time.deltaTime;
             float newY = 0.05f;
-            //float newX = 0.05f;
             myT.position = new Vector2(myT.position.x, myT.position.y + newY);
             yield return null;
         }

@@ -21,6 +21,21 @@ public class playerMove : MonoBehaviour
         col = GetComponent<Collider2D>();
     }
 
+    void Update()
+    {
+        if(canMove)
+        {
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+            {
+                jump();
+            }
+            if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.W))
+            {
+                jumpPressed = false;
+            }
+        }
+    }
+
     void FixedUpdate()
     {
         if (Input.GetAxis("Horizontal") != 0)
@@ -33,14 +48,6 @@ public class playerMove : MonoBehaviour
         }
         if (canMove)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
-            {
-                jump();
-            }
-            if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.W))
-            {
-                jumpPressed = false;
-            }
 
             if (Input.GetAxis("Horizontal") != 0)
             {
