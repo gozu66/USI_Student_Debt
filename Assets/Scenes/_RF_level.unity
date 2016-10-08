@@ -602,6 +602,7 @@ GameObject:
   - 4: {fileID: 45617832}
   - 212: {fileID: 45617834}
   - 68: {fileID: 45617833}
+  - 251: {fileID: 45617835}
   m_Layer: 0
   m_Name: forest_pack_38 (11)
   m_TagString: Untagged
@@ -632,7 +633,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -670,6 +671,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &45617835
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 45617831}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &47965268
 GameObject:
   m_ObjectHideFlags: 0
@@ -680,6 +698,7 @@ GameObject:
   - 4: {fileID: 47965269}
   - 212: {fileID: 47965271}
   - 68: {fileID: 47965270}
+  - 251: {fileID: 47965272}
   m_Layer: 0
   m_Name: forest_pack_13 (14)
   m_TagString: Untagged
@@ -710,7 +729,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -748,6 +767,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &47965272
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 47965268}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &48077588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,6 +1118,7 @@ GameObject:
   - 4: {fileID: 76397301}
   - 212: {fileID: 76397303}
   - 68: {fileID: 76397302}
+  - 251: {fileID: 76397304}
   m_Layer: 0
   m_Name: forest_pack_39 (2)
   m_TagString: Untagged
@@ -1112,7 +1149,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -1150,6 +1187,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &76397304
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 76397300}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &81866547
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,6 +1706,7 @@ GameObject:
   - 4: {fileID: 131769133}
   - 212: {fileID: 131769134}
   - 68: {fileID: 131769135}
+  - 251: {fileID: 131769136}
   m_Layer: 0
   m_Name: forest_pack_38 (3)
   m_TagString: Untagged
@@ -1715,11 +1770,33 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
   - {x: 0.64, y: 0}
+--- !u!251 &131769136
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 131769132}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
+--- !u!4 &139730231 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064,
+    type: 2}
+  m_PrefabInternal: {fileID: 1164919076}
 --- !u!1 &144440183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1807,7 @@ GameObject:
   - 4: {fileID: 144440184}
   - 212: {fileID: 144440186}
   - 68: {fileID: 144440185}
+  - 251: {fileID: 144440187}
   m_Layer: 0
   m_Name: forest_pack_13 (16)
   m_TagString: Untagged
@@ -1760,7 +1838,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -1798,6 +1876,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &144440187
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 144440183}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &158835437
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,6 +2148,7 @@ GameObject:
   - 4: {fileID: 169934547}
   - 212: {fileID: 169934549}
   - 68: {fileID: 169934548}
+  - 251: {fileID: 169934550}
   m_Layer: 0
   m_Name: forest_pack_38 (15)
   m_TagString: Untagged
@@ -2083,7 +2179,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -2121,6 +2217,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
+--- !u!251 &169934550
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 169934546}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &170236360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4351,7 +4464,10 @@ Transform:
   m_LocalPosition: {x: 82.01728, y: -0.2844548, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 139730231}
+  - {fileID: 1714518762}
+  - {fileID: 969669114}
   m_Father: {fileID: 0}
   m_RootOrder: 6
 --- !u!1 &325047987
@@ -4454,6 +4570,7 @@ GameObject:
   - 4: {fileID: 330185464}
   - 212: {fileID: 330185466}
   - 68: {fileID: 330185465}
+  - 251: {fileID: 330185467}
   m_Layer: 0
   m_Name: forest_pack_39 (15)
   m_TagString: Untagged
@@ -4484,7 +4601,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -4522,6 +4639,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &330185467
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 330185463}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &333456241
 GameObject:
   m_ObjectHideFlags: 0
@@ -4622,6 +4756,7 @@ GameObject:
   - 4: {fileID: 344679282}
   - 212: {fileID: 344679284}
   - 68: {fileID: 344679283}
+  - 251: {fileID: 344679285}
   m_Layer: 0
   m_Name: forest_pack_13 (7)
   m_TagString: Untagged
@@ -4652,7 +4787,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -4690,6 +4825,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &344679285
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344679281}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &359029897
 GameObject:
   m_ObjectHideFlags: 0
@@ -4958,6 +5110,7 @@ GameObject:
   - 4: {fileID: 361843741}
   - 212: {fileID: 361843740}
   - 68: {fileID: 361843742}
+  - 251: {fileID: 361843743}
   m_Layer: 0
   m_Name: forest_pack_39
   m_TagString: Untagged
@@ -5021,11 +5174,28 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
   - {x: 0.64, y: 0}
+--- !u!251 &361843743
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 361843739}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &367267969
 GameObject:
   m_ObjectHideFlags: 0
@@ -5036,6 +5206,7 @@ GameObject:
   - 4: {fileID: 367267970}
   - 212: {fileID: 367267972}
   - 68: {fileID: 367267971}
+  - 251: {fileID: 367267973}
   m_Layer: 0
   m_Name: forest_pack_39 (14)
   m_TagString: Untagged
@@ -5066,7 +5237,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -5104,20 +5275,37 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &367267973
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 367267969}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1001 &368606853
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 310611235}
     m_Modifications:
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 171.93
+      value: 89.91271
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.11
+      value: 0.1744548
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5125,15 +5313,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.w
@@ -5141,7 +5329,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1000010688770506, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_Name
@@ -5316,6 +5504,7 @@ GameObject:
   - 4: {fileID: 390478419}
   - 212: {fileID: 390478421}
   - 68: {fileID: 390478420}
+  - 251: {fileID: 390478422}
   m_Layer: 0
   m_Name: forest_pack_13 (8)
   m_TagString: Untagged
@@ -5346,7 +5535,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -5384,6 +5573,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &390478422
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 390478418}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &397254909
 GameObject:
   m_ObjectHideFlags: 0
@@ -5472,6 +5678,7 @@ GameObject:
   - 4: {fileID: 398920375}
   - 212: {fileID: 398920377}
   - 68: {fileID: 398920376}
+  - 251: {fileID: 398920378}
   m_Layer: 0
   m_Name: forest_pack_38 (6)
   m_TagString: Untagged
@@ -5502,7 +5709,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -5540,6 +5747,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
+--- !u!251 &398920378
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 398920374}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &403231481
 GameObject:
   m_ObjectHideFlags: 0
@@ -6094,6 +6318,7 @@ GameObject:
   - 4: {fileID: 432159225}
   - 212: {fileID: 432159227}
   - 68: {fileID: 432159226}
+  - 251: {fileID: 432159228}
   m_Layer: 0
   m_Name: forest_pack_38 (10)
   m_TagString: Untagged
@@ -6124,7 +6349,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -6162,6 +6387,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &432159228
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 432159224}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &442906515
 GameObject:
   m_ObjectHideFlags: 0
@@ -6652,6 +6894,7 @@ GameObject:
   - 4: {fileID: 495528231}
   - 212: {fileID: 495528233}
   - 68: {fileID: 495528232}
+  - 251: {fileID: 495528234}
   m_Layer: 0
   m_Name: forest_pack_39 (11)
   m_TagString: Untagged
@@ -6682,7 +6925,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -6720,6 +6963,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &495528234
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 495528230}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &501997626
 GameObject:
   m_ObjectHideFlags: 0
@@ -7364,6 +7624,7 @@ GameObject:
   - 4: {fileID: 543255650}
   - 212: {fileID: 543255652}
   - 68: {fileID: 543255651}
+  - 251: {fileID: 543255653}
   m_Layer: 0
   m_Name: forest_pack_39 (6)
   m_TagString: Untagged
@@ -7394,7 +7655,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -7432,6 +7693,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &543255653
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543255649}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &549211564
 GameObject:
   m_ObjectHideFlags: 0
@@ -8011,6 +8289,7 @@ GameObject:
   - 4: {fileID: 610596175}
   - 212: {fileID: 610596177}
   - 68: {fileID: 610596176}
+  - 251: {fileID: 610596178}
   m_Layer: 0
   m_Name: forest_pack_13 (10)
   m_TagString: Untagged
@@ -8041,7 +8320,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -8079,6 +8358,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &610596178
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 610596174}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &616276571
 GameObject:
   m_ObjectHideFlags: 0
@@ -8089,6 +8385,7 @@ GameObject:
   - 4: {fileID: 616276572}
   - 212: {fileID: 616276574}
   - 68: {fileID: 616276573}
+  - 251: {fileID: 616276575}
   m_Layer: 0
   m_Name: forest_pack_38 (9)
   m_TagString: Untagged
@@ -8119,7 +8416,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -8157,6 +8454,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
+--- !u!251 &616276575
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 616276571}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &625366012
 GameObject:
   m_ObjectHideFlags: 0
@@ -8323,6 +8637,7 @@ GameObject:
   - 4: {fileID: 636135350}
   - 212: {fileID: 636135351}
   - 68: {fileID: 636135352}
+  - 251: {fileID: 636135353}
   m_Layer: 0
   m_Name: forest_pack_38 (2)
   m_TagString: Untagged
@@ -8386,11 +8701,28 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
   - {x: 0.64, y: 0}
+--- !u!251 &636135353
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636135349}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &636348195
 GameObject:
   m_ObjectHideFlags: 0
@@ -8737,6 +9069,7 @@ GameObject:
   - 4: {fileID: 673491989}
   - 212: {fileID: 673491991}
   - 68: {fileID: 673491990}
+  - 251: {fileID: 673491992}
   m_Layer: 0
   m_Name: forest_pack_13 (9)
   m_TagString: Untagged
@@ -8767,7 +9100,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -8805,6 +9138,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &673491992
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673491988}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &674710920
 GameObject:
   m_ObjectHideFlags: 0
@@ -9306,6 +9656,7 @@ GameObject:
   - 4: {fileID: 707731073}
   - 212: {fileID: 707731075}
   - 68: {fileID: 707731074}
+  - 251: {fileID: 707731076}
   m_Layer: 0
   m_Name: forest_pack_39 (1)
   m_TagString: Untagged
@@ -9336,7 +9687,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -9374,6 +9725,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &707731076
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 707731072}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &708330075
 GameObject:
   m_ObjectHideFlags: 0
@@ -9774,6 +10142,7 @@ GameObject:
   - 4: {fileID: 739429963}
   - 212: {fileID: 739429965}
   - 68: {fileID: 739429964}
+  - 251: {fileID: 739429966}
   m_Layer: 0
   m_Name: forest_pack_39 (4)
   m_TagString: Untagged
@@ -9804,7 +10173,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -9842,6 +10211,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &739429966
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 739429962}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &750320121
 GameObject:
   m_ObjectHideFlags: 0
@@ -11125,6 +11511,7 @@ GameObject:
   - 4: {fileID: 881433344}
   - 212: {fileID: 881433346}
   - 68: {fileID: 881433345}
+  - 251: {fileID: 881433347}
   m_Layer: 0
   m_Name: forest_pack_13 (15)
   m_TagString: Untagged
@@ -11155,7 +11542,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -11193,6 +11580,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &881433347
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 881433343}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &885193582
 GameObject:
   m_ObjectHideFlags: 0
@@ -11682,6 +12086,7 @@ GameObject:
   - 4: {fileID: 923699757}
   - 212: {fileID: 923699759}
   - 68: {fileID: 923699758}
+  - 251: {fileID: 923699760}
   m_Layer: 0
   m_Name: forest_pack_38 (14)
   m_TagString: Untagged
@@ -11712,7 +12117,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -11750,6 +12155,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &923699760
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 923699756}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &925933437
 GameObject:
   m_ObjectHideFlags: 0
@@ -11994,6 +12416,7 @@ GameObject:
   - 4: {fileID: 933941672}
   - 212: {fileID: 933941674}
   - 68: {fileID: 933941673}
+  - 251: {fileID: 933941675}
   m_Layer: 0
   m_Name: forest_pack_39 (8)
   m_TagString: Untagged
@@ -12024,7 +12447,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -12062,6 +12485,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &933941675
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 933941671}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &934646059
 GameObject:
   m_ObjectHideFlags: 0
@@ -12072,6 +12512,7 @@ GameObject:
   - 4: {fileID: 934646060}
   - 212: {fileID: 934646062}
   - 68: {fileID: 934646061}
+  - 251: {fileID: 934646063}
   m_Layer: 0
   m_Name: forest_pack_38 (1)
   m_TagString: Untagged
@@ -12102,7 +12543,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -12140,6 +12581,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
+--- !u!251 &934646063
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934646059}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &937517419
 GameObject:
   m_ObjectHideFlags: 0
@@ -12734,6 +13192,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gib: {fileID: 1000012181672628, guid: df5073e682f6119408b2788be77db43d, type: 2}
+--- !u!4 &969669114 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064,
+    type: 2}
+  m_PrefabInternal: {fileID: 368606853}
 --- !u!1 &978655326
 GameObject:
   m_ObjectHideFlags: 0
@@ -12822,6 +13285,7 @@ GameObject:
   - 4: {fileID: 987047371}
   - 212: {fileID: 987047373}
   - 68: {fileID: 987047372}
+  - 251: {fileID: 987047374}
   m_Layer: 0
   m_Name: forest_pack_39 (12)
   m_TagString: Untagged
@@ -12852,7 +13316,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -12890,6 +13354,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &987047374
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 987047370}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &998874757
 GameObject:
   m_ObjectHideFlags: 0
@@ -13655,15 +14136,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 310611235}
     m_Modifications:
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 127.98
+      value: 45.962723
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.11
+      value: 0.1744548
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13671,15 +14152,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.w
@@ -13687,7 +14168,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1000010688770506, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_Name
@@ -13706,6 +14187,7 @@ GameObject:
   - 4: {fileID: 1045906411}
   - 212: {fileID: 1045906413}
   - 68: {fileID: 1045906412}
+  - 251: {fileID: 1045906414}
   m_Layer: 0
   m_Name: forest_pack_38 (5)
   m_TagString: Untagged
@@ -13736,7 +14218,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -13774,6 +14256,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
+--- !u!251 &1045906414
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1045906410}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1049715052
 GameObject:
   m_ObjectHideFlags: 0
@@ -14017,6 +14516,7 @@ GameObject:
   - 4: {fileID: 1071347369}
   - 212: {fileID: 1071347368}
   - 68: {fileID: 1071347367}
+  - 251: {fileID: 1071347370}
   m_Layer: 0
   m_Name: forest_pack_13 (1)
   m_TagString: Untagged
@@ -14034,7 +14534,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -14085,6 +14585,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1372517145}
   m_RootOrder: 41
+--- !u!251 &1071347370
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1071347366}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1075873514
 GameObject:
   m_ObjectHideFlags: 0
@@ -14741,6 +15258,7 @@ GameObject:
   - 4: {fileID: 1123221770}
   - 212: {fileID: 1123221772}
   - 68: {fileID: 1123221771}
+  - 251: {fileID: 1123221773}
   m_Layer: 0
   m_Name: forest_pack_39 (13)
   m_TagString: Untagged
@@ -14771,7 +15289,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -14809,6 +15327,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1123221773
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1123221769}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1128593087
 GameObject:
   m_ObjectHideFlags: 0
@@ -15215,15 +15750,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 310611235}
     m_Modifications:
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 89.41
+      value: 7.392723
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.11
+      value: 0.1744548
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15231,15 +15766,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_LocalRotation.w
@@ -15247,7 +15782,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1000010688770506, guid: 65c662f0b717fce46996ad08cb83a064, type: 2}
       propertyPath: m_Name
@@ -15822,6 +16357,7 @@ GameObject:
   - 4: {fileID: 1204678439}
   - 212: {fileID: 1204678438}
   - 68: {fileID: 1204678437}
+  - 251: {fileID: 1204678440}
   m_Layer: 0
   m_Name: forest_pack_13 (4)
   m_TagString: Untagged
@@ -15839,7 +16375,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -15890,6 +16426,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1372517145}
   m_RootOrder: 44
+--- !u!251 &1204678440
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1204678436}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1230134624
 GameObject:
   m_ObjectHideFlags: 0
@@ -16392,6 +16945,7 @@ GameObject:
   - 4: {fileID: 1260502540}
   - 212: {fileID: 1260502542}
   - 68: {fileID: 1260502541}
+  - 251: {fileID: 1260502543}
   m_Layer: 0
   m_Name: forest_pack_38 (8)
   m_TagString: Untagged
@@ -16422,7 +16976,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -16460,6 +17014,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1260502543
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1260502539}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1260564634
 GameObject:
   m_ObjectHideFlags: 0
@@ -16626,6 +17197,7 @@ GameObject:
   - 4: {fileID: 1267913728}
   - 212: {fileID: 1267913730}
   - 68: {fileID: 1267913729}
+  - 251: {fileID: 1267913731}
   m_Layer: 0
   m_Name: forest_pack_38 (13)
   m_TagString: Untagged
@@ -16656,7 +17228,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -16694,6 +17266,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1267913731
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1267913727}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1270097303
 GameObject:
   m_ObjectHideFlags: 0
@@ -17092,6 +17681,7 @@ GameObject:
   - 4: {fileID: 1305745855}
   - 212: {fileID: 1305745857}
   - 68: {fileID: 1305745856}
+  - 251: {fileID: 1305745858}
   m_Layer: 0
   m_Name: forest_pack_39 (5)
   m_TagString: Untagged
@@ -17122,7 +17712,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -17160,6 +17750,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1305745858
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305745854}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1305932799
 GameObject:
   m_ObjectHideFlags: 0
@@ -17170,6 +17777,7 @@ GameObject:
   - 4: {fileID: 1305932800}
   - 212: {fileID: 1305932802}
   - 68: {fileID: 1305932801}
+  - 251: {fileID: 1305932803}
   m_Layer: 0
   m_Name: forest_pack_13 (6)
   m_TagString: Untagged
@@ -17200,7 +17808,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -17238,6 +17846,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1305932803
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305932799}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1307117985
 GameObject:
   m_ObjectHideFlags: 0
@@ -18406,6 +19031,7 @@ GameObject:
   - 4: {fileID: 1385691643}
   - 212: {fileID: 1385691645}
   - 68: {fileID: 1385691644}
+  - 251: {fileID: 1385691646}
   m_Layer: 0
   m_Name: forest_pack_39 (9)
   m_TagString: Untagged
@@ -18436,7 +19062,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -18474,6 +19100,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1385691646
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1385691642}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1392783106
 GameObject:
   m_ObjectHideFlags: 0
@@ -18562,6 +19205,7 @@ GameObject:
   - 4: {fileID: 1394850266}
   - 212: {fileID: 1394850268}
   - 68: {fileID: 1394850267}
+  - 251: {fileID: 1394850269}
   m_Layer: 0
   m_Name: forest_pack_38 (7)
   m_TagString: Untagged
@@ -18592,7 +19236,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -18630,6 +19274,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1394850269
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1394850265}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1394893354
 GameObject:
   m_ObjectHideFlags: 0
@@ -18808,6 +19469,7 @@ GameObject:
   - 4: {fileID: 1400749386}
   - 212: {fileID: 1400749388}
   - 68: {fileID: 1400749387}
+  - 251: {fileID: 1400749389}
   m_Layer: 0
   m_Name: forest_pack_13 (17)
   m_TagString: Untagged
@@ -18838,7 +19500,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -18876,6 +19538,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1400749389
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1400749385}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1407927974
 GameObject:
   m_ObjectHideFlags: 0
@@ -19610,6 +20289,7 @@ GameObject:
   - 4: {fileID: 1484412496}
   - 212: {fileID: 1484412498}
   - 68: {fileID: 1484412497}
+  - 251: {fileID: 1484412499}
   m_Layer: 0
   m_Name: forest_pack_13 (13)
   m_TagString: Untagged
@@ -19640,7 +20320,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -19678,6 +20358,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1484412499
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1484412495}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1485619277
 GameObject:
   m_ObjectHideFlags: 0
@@ -20180,6 +20877,7 @@ GameObject:
   - 4: {fileID: 1528624710}
   - 212: {fileID: 1528624712}
   - 68: {fileID: 1528624711}
+  - 251: {fileID: 1528624713}
   m_Layer: 0
   m_Name: forest_pack_13 (18)
   m_TagString: Untagged
@@ -20210,7 +20908,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -20248,6 +20946,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1528624713
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1528624709}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1533631351
 GameObject:
   m_ObjectHideFlags: 0
@@ -20892,6 +21607,7 @@ GameObject:
   - 4: {fileID: 1600663455}
   - 212: {fileID: 1600663457}
   - 68: {fileID: 1600663456}
+  - 251: {fileID: 1600663458}
   m_Layer: 0
   m_Name: forest_pack_13 (11)
   m_TagString: Untagged
@@ -20922,7 +21638,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -20960,6 +21676,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1600663458
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1600663454}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1605714880
 GameObject:
   m_ObjectHideFlags: 0
@@ -21293,6 +22026,7 @@ GameObject:
   - 4: {fileID: 1642990971}
   - 212: {fileID: 1642990973}
   - 68: {fileID: 1642990972}
+  - 251: {fileID: 1642990974}
   m_Layer: 0
   m_Name: forest_pack_39 (10)
   m_TagString: Untagged
@@ -21323,7 +22057,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -21361,6 +22095,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1642990974
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642990970}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1660123579
 GameObject:
   m_ObjectHideFlags: 0
@@ -21972,6 +22723,11 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.64, y: 0}
   - {x: 0.64, y: 0}
+--- !u!4 &1714518762 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000012076957444, guid: 65c662f0b717fce46996ad08cb83a064,
+    type: 2}
+  m_PrefabInternal: {fileID: 1029709987}
 --- !u!1 &1719027522
 GameObject:
   m_ObjectHideFlags: 0
@@ -21982,6 +22738,7 @@ GameObject:
   - 4: {fileID: 1719027523}
   - 212: {fileID: 1719027525}
   - 68: {fileID: 1719027524}
+  - 251: {fileID: 1719027526}
   m_Layer: 0
   m_Name: forest_pack_39 (7)
   m_TagString: Untagged
@@ -22012,7 +22769,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -22050,6 +22807,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1719027526
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1719027522}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1722057071
 GameObject:
   m_ObjectHideFlags: 0
@@ -22137,6 +22911,7 @@ GameObject:
   - 4: {fileID: 1729198589}
   - 212: {fileID: 1729198588}
   - 68: {fileID: 1729198587}
+  - 251: {fileID: 1729198590}
   m_Layer: 0
   m_Name: forest_pack_13 (2)
   m_TagString: Untagged
@@ -22154,7 +22929,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -22205,6 +22980,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1372517145}
   m_RootOrder: 42
+--- !u!251 &1729198590
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1729198586}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1742647364
 GameObject:
   m_ObjectHideFlags: 0
@@ -22371,6 +23163,7 @@ GameObject:
   - 4: {fileID: 1778152009}
   - 212: {fileID: 1778152008}
   - 68: {fileID: 1778152007}
+  - 251: {fileID: 1778152010}
   m_Layer: 0
   m_Name: forest_pack_13 (3)
   m_TagString: Untagged
@@ -22388,7 +23181,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -22439,6 +23232,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1372517145}
   m_RootOrder: 43
+--- !u!251 &1778152010
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778152006}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1780567341
 GameObject:
   m_ObjectHideFlags: 0
@@ -22526,6 +23336,7 @@ GameObject:
   - 4: {fileID: 1782492324}
   - 212: {fileID: 1782492326}
   - 68: {fileID: 1782492325}
+  - 251: {fileID: 1782492327}
   m_Layer: 0
   m_Name: forest_pack_38 (16)
   m_TagString: Untagged
@@ -22556,7 +23367,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -22594,6 +23405,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1782492327
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782492323}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1790274551
 GameObject:
   m_ObjectHideFlags: 0
@@ -22682,6 +23510,7 @@ GameObject:
   - 4: {fileID: 1810154686}
   - 212: {fileID: 1810154688}
   - 68: {fileID: 1810154687}
+  - 251: {fileID: 1810154689}
   m_Layer: 0
   m_Name: forest_pack_13 (5)
   m_TagString: Untagged
@@ -22712,7 +23541,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -22750,6 +23579,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1810154689
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1810154685}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1812872598
 GameObject:
   m_ObjectHideFlags: 0
@@ -22760,6 +23606,7 @@ GameObject:
   - 4: {fileID: 1812872599}
   - 212: {fileID: 1812872601}
   - 68: {fileID: 1812872600}
+  - 251: {fileID: 1812872602}
   m_Layer: 0
   m_Name: forest_pack_38
   m_TagString: Untagged
@@ -22790,7 +23637,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
@@ -22828,6 +23675,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &1812872602
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1812872598}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1843030496
 GameObject:
   m_ObjectHideFlags: 0
@@ -24117,6 +24981,7 @@ GameObject:
   - 4: {fileID: 2013974750}
   - 212: {fileID: 2013974752}
   - 68: {fileID: 2013974751}
+  - 251: {fileID: 2013974753}
   m_Layer: 0
   m_Name: forest_pack_39 (3)
   m_TagString: Untagged
@@ -24147,7 +25012,7 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.55}
   m_Points:
   - {x: -0.64, y: 0}
@@ -24185,6 +25050,23 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!251 &2013974753
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013974749}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &2028598532
 GameObject:
   m_ObjectHideFlags: 0
@@ -25254,6 +26136,7 @@ GameObject:
   - 4: {fileID: 2124801311}
   - 212: {fileID: 2124801310}
   - 68: {fileID: 2124801312}
+  - 251: {fileID: 2124801313}
   m_Layer: 0
   m_Name: forest_pack_13
   m_TagString: Untagged
@@ -25317,11 +26200,28 @@ EdgeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: 0, y: 0.6}
   m_Points:
   - {x: -0.64, y: 0}
   - {x: 0.64, y: 0}
+--- !u!251 &2124801313
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2124801309}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &2126038429
 GameObject:
   m_ObjectHideFlags: 0
