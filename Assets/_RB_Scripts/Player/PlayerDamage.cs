@@ -30,10 +30,24 @@ public class PlayerDamage : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Respawn")
+        {
+            Vector2 newPosition = Camera.main.transform.position;
+            //newPosition
+            newPosition.y = 0;
+            newPosition.x -= 5f;
+            myt.position = newPosition;
+            FlashSprite();
+        }
+    }
+
     public float force;
     IEnumerator TakeDamage(Vector2 hitDir)
     {
         //Play Player sprite Flashing animation
+        FlashSprite();
 
         playerMove.canMove = false;
         rbody.velocity = Vector2.zero;
@@ -52,4 +66,8 @@ public class PlayerDamage : MonoBehaviour
 
     }
 
+    void FlashSprite()
+    {
+
+    }
 }
