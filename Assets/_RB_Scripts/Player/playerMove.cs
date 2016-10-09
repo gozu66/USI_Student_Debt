@@ -15,14 +15,19 @@ public class playerMove : MonoBehaviour
 
     public static bool canMove = true;
 
+    Animator animator;
+
     void Start ()
 	{
         rBody = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
+        animator.SetBool("Grounded", GroundChecker.playerIsGrounded);
+        animator.SetBool("Moving", isMoving);
         if(canMove)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
@@ -81,8 +86,10 @@ public class playerMove : MonoBehaviour
 	{
 		if(GroundChecker.playerIsGrounded)
 		{
+            animator.SetTrigger("Jump");
             rBody.AddForce((Vector2.up * jumpForce), ForceMode2D.Impulse);
 			jumpPressed = true;
+            //animator.ResetTrigger("Jump");
 		}
 	}    
 }
