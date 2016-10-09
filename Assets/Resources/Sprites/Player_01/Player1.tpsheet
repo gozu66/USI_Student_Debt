@@ -1,0 +1,21 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# http://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:efda1f72b103e545d19094739cc00045:cee73d00d9f315efc9c796ed333c6a72:b73d16b07ab69c1854cf82fa263a7771$
+#
+:format=40000
+:texture=Player1.png
+:size=128x128
+:pivotpoints=enabled
+
+Player1_Idle_01;1;95;32;32;0.5;0.5
+Player1_Idle_02;35;95;32;32;0.5;0.5
+Player1_Idle_03;69;95;32;32;0.5;0.5
+Player1_Idle_04;1;61;32;32;0.5;0.5
+Player1_run_01;35;61;32;32;0.5;0.5
+Player1_run_02;69;61;32;32;0.5;0.5
+Player1_run_03;1;27;32;32;0.5;0.5
+Player1_run_04;35;27;32;32;0.5;0.5
