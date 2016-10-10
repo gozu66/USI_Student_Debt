@@ -5,6 +5,7 @@ public class PlayerDamage : MonoBehaviour
 {
     Rigidbody2D rbody;
     Transform myt;
+    Animator anim;
 
     public GameObject gib;
 
@@ -12,6 +13,7 @@ public class PlayerDamage : MonoBehaviour
     {
         rbody = GetComponent<Rigidbody2D>();
         myt = transform;
+        anim = GetComponent<Animator>();
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -68,6 +70,7 @@ public class PlayerDamage : MonoBehaviour
 
     void FlashSprite()
     {
-
+        anim.SetTrigger("Hurt");
+        //anim.ResetTrigger("Hurt");
     }
 }
