@@ -9,6 +9,7 @@ TagManager:
   - Vehicle
   - Cull
   - Wake Up
+  - Home
   layers:
   - Default
   - TransparentFX

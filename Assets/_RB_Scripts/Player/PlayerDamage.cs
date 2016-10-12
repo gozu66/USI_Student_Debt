@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerDamage : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerDamage : MonoBehaviour
     Animator anim;
 
     public GameObject gib;
+    //public Text gib;
 
     void Start()
     {
@@ -20,12 +22,12 @@ public class PlayerDamage : MonoBehaviour
     {
         if(other.collider.tag == "Screen Edge")
         {
-            StartCoroutine("TakeDamage", new Vector2(myt.position.x - other.transform.position.x, 0));            
+            StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 0), true));            
         }
         else if(other.collider.tag == "Vehicle")
         {
             spawnEffects();
-            StartCoroutine("TakeDamage", new Vector2(myt.position.x - other.transform.position.x, 1));
+            StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 1), true));
             DebtTracker._instance.CountTaxi();
             DebtTracker._instance.Cost(-25);
             other.collider.enabled = false;
@@ -43,15 +45,24 @@ public class PlayerDamage : MonoBehaviour
             myt.position = newPosition;
             FlashSprite();
         }
+        else if (other.tag == "Home")
+        {
+            StartCoroutine(TakeDamage(new Vector2(0, 0), false));
+            other.GetComponent<Collider2D>().enabled = false;
+            DebtTracker._instance.Cost(-1500);
+            DebtTracker._instance.StopAllCoroutines();
+            DebtTracker._instance.StartCoroutine("FadeText");
+            spawnEffects();
+        }
     }
 
     public float force;
-    IEnumerator TakeDamage(Vector2 hitDir)
+    IEnumerator TakeDamage(Vector2 hitDir, bool haltPlayer)
     {
         //Play Player sprite Flashing animation
         FlashSprite();
 
-        playerMove.canMove = false;
+        if(haltPlayer)playerMove.canMove = false;
         rbody.velocity = Vector2.zero;
         rbody.AddForce(hitDir * force, ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.5f);
