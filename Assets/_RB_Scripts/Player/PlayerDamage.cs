@@ -8,9 +8,6 @@ public class PlayerDamage : MonoBehaviour
     Transform myt;
     Animator anim;
 
-    public GameObject gib;
-    //public Text gib;
-
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
@@ -26,10 +23,10 @@ public class PlayerDamage : MonoBehaviour
         }
         else if(other.collider.tag == "Vehicle")
         {
-            spawnEffects();
+            spawnEffects("Transport!\n-€50");
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 1), true));
             DebtTracker._instance.CountTaxi();
-            DebtTracker._instance.Cost(-25);
+            DebtTracker._instance.Cost(-50);
             other.collider.enabled = false;
         }
     }
@@ -39,7 +36,6 @@ public class PlayerDamage : MonoBehaviour
         if(other.tag == "Respawn")
         {
             Vector2 newPosition = Camera.main.transform.position;
-            //newPosition
             newPosition.y = 0;
             newPosition.x -= 5f;
             myt.position = newPosition;
@@ -52,30 +48,38 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.Cost(-1500);
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
-            spawnEffects();
+            spawnEffects("Rent!\n-€1500");
         }
     }
 
     public float force;
     IEnumerator TakeDamage(Vector2 hitDir, bool haltPlayer)
     {
-        //Play Player sprite Flashing animation
         FlashSprite();
 
         if(haltPlayer)playerMove.canMove = false;
+
         rbody.velocity = Vector2.zero;
         rbody.AddForce(hitDir * force, ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.5f);
+
         playerMove.canMove = true;
     }
 
-    void spawnEffects()
+    public GameObject infoItem;
+    void spawnEffects(string damType)
     {
+        /*
         for (int i = 0; i < 5; i++)
         {
             Vector2 newPos = new Vector2(transform.position.x + Random.Range(-0.5f, 0.5f), transform.position.y + Random.Range(-0.5f, 0.5f));
             Instantiate(gib, newPos, Quaternion.identity);
         }
+        */
+
+        GameObject blip = Instantiate(infoItem, transform.position, Quaternion.identity)as GameObject;        
+        TextMesh tm = blip.GetComponent<TextMesh>();
+        tm.text = damType;
 
     }
 

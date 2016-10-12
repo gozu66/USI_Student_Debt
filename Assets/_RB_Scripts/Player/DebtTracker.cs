@@ -55,7 +55,7 @@ public class DebtTracker : MonoBehaviour
         {
             i -= 1;
             debtUpdateUI.color = new Color(debtUpdateUI.color.r, debtUpdateUI.color.g, debtUpdateUI.color.b, i);
-            print(debtUpdateUI.color.a);
+            //print(debtUpdateUI.color.a);
             yield return null;
         }
         i = 255;
