@@ -24,7 +24,7 @@ GameObject:
   - 60: {fileID: 60000010712170884}
   - 114: {fileID: 114000010881272032}
   m_Layer: 0
-  m_Name: Taxi
+  m_Name: taxi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
