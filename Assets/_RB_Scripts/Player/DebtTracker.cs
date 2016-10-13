@@ -30,10 +30,19 @@ public class DebtTracker : MonoBehaviour
         debtUpdateUI.text = "";
     }
 
+    void Update()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            GenerateAndDisplay();
+        }
+    }
+
     public void Cost(int amount)
     {
         debtUpdateUI.color = (amount > 0) ? Color.green : Color.red;
         debt += amount;
+        if (amount < 0) { AddTotalExpenses(amount); }
         debtString = debt.ToString() + " €";
         debtUI.text = debtString;
         StopAllCoroutines();
@@ -59,5 +68,26 @@ public class DebtTracker : MonoBehaviour
             yield return null;
         }
         i = 255;
+    }
+
+    int totalCoins;
+    public void AddTotalCoins()
+    {
+        totalCoins++;
+    }
+    int totalExpenses;
+    public void AddTotalExpenses(int amount)
+    {
+        totalExpenses += amount;
+    }
+
+    public Text _text;
+    public Image _image;
+    void GenerateAndDisplay()
+    {
+        _text.text = "You have earned €" + (totalCoins * 250) + " since you graduated!\nYou have paid out €" + (Mathf.Abs(totalExpenses)) + " in expenses!\nYou are still €" + (20000 - (totalCoins * 250)) + " in debt!";
+
+        _text.enabled = true;
+        _image.enabled = true;
     }
 }

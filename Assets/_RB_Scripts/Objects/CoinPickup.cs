@@ -3,15 +3,20 @@ using System.Collections;
 
 public class CoinPickup : MonoBehaviour
 {
-    int value = 200;
+    public int value;
+    public AudioClip pickup;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
             spawnEffects();
-            DebtTracker._instance.Cost(250);
-
+            DebtTracker._instance.Cost(value);
+            DebtTracker._instance.AddTotalCoins();
+            //AudioSource audioS = this.GetComponent<AudioSource>();
+            //audioS.PlayOneShot(pickup);
+            AudioSource.PlayClipAtPoint(pickup, this.transform.position);
+            //this.GetComponent<AudioSource>().enabled = true;
             Destroy(gameObject);
         }
     }

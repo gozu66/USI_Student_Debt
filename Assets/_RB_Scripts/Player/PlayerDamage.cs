@@ -8,6 +8,9 @@ public class PlayerDamage : MonoBehaviour
     Transform myt;
     Animator anim;
 
+    //AudioSource aSource;
+    public AudioClip damageAudio, rentAudio, taxiAudio;
+
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
@@ -19,15 +22,17 @@ public class PlayerDamage : MonoBehaviour
     {
         if(other.collider.tag == "Screen Edge")
         {
-            StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 0), true));            
+            StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 0), true));
+            AudioSource.PlayClipAtPoint(damageAudio, transform.position);
         }
         else if(other.collider.tag == "Vehicle")
         {
             spawnEffects("Transport!\n-€50");
+            AudioSource.PlayClipAtPoint(taxiAudio, transform.position);
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 1), true));
             DebtTracker._instance.CountTaxi();
             DebtTracker._instance.Cost(-50);
-            other.collider.enabled = false;
+            other.collider.isTrigger = true;
         }
     }
 
@@ -49,6 +54,7 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
             spawnEffects("Rent!\n-€1500");
+            AudioSource.PlayClipAtPoint(rentAudio, transform.position);
         }
     }
 
@@ -88,4 +94,5 @@ public class PlayerDamage : MonoBehaviour
         anim.SetTrigger("Hurt");
         //anim.ResetTrigger("Hurt");
     }
+
 }

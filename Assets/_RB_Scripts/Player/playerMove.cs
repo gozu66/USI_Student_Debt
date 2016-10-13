@@ -16,6 +16,7 @@ public class playerMove : MonoBehaviour
     public static bool canMove = true;
 
     Animator animator;
+    public AudioClip jumpAudio;
 
     void Start ()
 	{
@@ -87,9 +88,17 @@ public class playerMove : MonoBehaviour
 		if(GroundChecker.playerIsGrounded)
 		{
             animator.SetTrigger("Jump");
+            AudioSource.PlayClipAtPoint(jumpAudio, transform.position);
             rBody.AddForce((Vector2.up * jumpForce), ForceMode2D.Impulse);
 			jumpPressed = true;
             //animator.ResetTrigger("Jump");
 		}
-	}    
+	}
+
+    public AudioClip[] footSteps;
+
+    void Footstep()
+    {
+        AudioSource.PlayClipAtPoint(footSteps[Random.Range(0, footSteps.Length)], transform.position);
+    }
 }

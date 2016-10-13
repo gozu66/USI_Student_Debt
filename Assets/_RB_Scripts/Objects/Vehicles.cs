@@ -26,6 +26,8 @@ public class Vehicles : MonoBehaviour
         if(other.tag == "Wake Up")
         {
             isAwake = true;
+            this.GetComponent<AudioSource>().enabled = true;
+
         }
         else if(other.tag == "Cull")
         {
