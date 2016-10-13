@@ -29,10 +29,18 @@ public class DebtTracker : MonoBehaviour
         debtUI.text = debtString;
         debtUpdateUI.text = "";
     }
-
+    /*
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
+        {
+            GenerateAndDisplay();
+        }
+    }
+    */
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.tag == "Finish")
         {
             GenerateAndDisplay();
         }
