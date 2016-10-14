@@ -7,8 +7,11 @@ public class PlayerDamage : MonoBehaviour
     Rigidbody2D rbody;
     Transform myt;
     Animator anim;
+    Transform cameraTransform;
 
-    //AudioSource aSource;
+    public int coinValue;
+    public AudioClip pickup;
+
     public AudioClip damageAudio, rentAudio, taxiAudio;
 
     void Start()
@@ -16,6 +19,7 @@ public class PlayerDamage : MonoBehaviour
         rbody = GetComponent<Rigidbody2D>();
         myt = transform;
         anim = GetComponent<Animator>();
+        cameraTransform = Camera.main.transform;
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -23,12 +27,12 @@ public class PlayerDamage : MonoBehaviour
         if(other.collider.tag == "Screen Edge")
         {
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 0), true));
-            AudioSource.PlayClipAtPoint(damageAudio, transform.position);
+            AudioSource.PlayClipAtPoint(damageAudio, cameraTransform.position);
         }
         else if(other.collider.tag == "Vehicle")
         {
             spawnEffects("Transport!\n-€50");
-            AudioSource.PlayClipAtPoint(taxiAudio, transform.position);
+            AudioSource.PlayClipAtPoint(taxiAudio, cameraTransform.position);
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 1), true));
             DebtTracker._instance.CountTaxi();
             DebtTracker._instance.Cost(-50);
@@ -54,8 +58,16 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
             spawnEffects("Rent!\n-€950");
-            AudioSource.PlayClipAtPoint(rentAudio, transform.position);
+            AudioSource.PlayClipAtPoint(rentAudio, cameraTransform.position);
         }
+        if (other.tag == "Coin")
+        {
+            DebtTracker._instance.Cost(coinValue);
+            DebtTracker._instance.AddTotalCoins();
+            AudioSource.PlayClipAtPoint(pickup, cameraTransform.position);
+            Destroy(other.gameObject);
+        }
+
     }
 
     public float force;

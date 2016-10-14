@@ -8,29 +8,17 @@ public class CoinPickup : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "Coin")
         {
-            spawnEffects();
             DebtTracker._instance.Cost(value);
             DebtTracker._instance.AddTotalCoins();
-            //AudioSource audioS = this.GetComponent<AudioSource>();
-            //audioS.PlayOneShot(pickup);
             AudioSource.PlayClipAtPoint(pickup, this.transform.position);
-            //this.GetComponent<AudioSource>().enabled = true;
-            Destroy(gameObject);
+            Destroy(other.gameObject);
         }
     }
 
     void spawnEffects()
     {
-        /*
-        for(int i = 0; i < 5; i++)
-        {
-            Vector2 newPos = new Vector2(transform.position.x + Random.Range(-0.5f, 0.5f), transform.position.y + Random.Range(-0.5f, 0.5f));
-            Instantiate(gib, newPos, Quaternion.identity);
-        }
-        */
-
         //Spawn Particle fx
     }
 }

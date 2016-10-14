@@ -24,8 +24,6 @@ public class MainCameraScript : MonoBehaviour
         if (col.tag == "Finish")
         {
             scroll = false;
-            print("hit");
-
         }
     }
 }
