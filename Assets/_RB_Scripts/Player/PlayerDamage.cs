@@ -50,10 +50,10 @@ public class PlayerDamage : MonoBehaviour
         {
             StartCoroutine(TakeDamage(new Vector2(0, 0), false));
             other.GetComponent<Collider2D>().enabled = false;
-            DebtTracker._instance.Cost(-1500);
+            DebtTracker._instance.Cost(-950);
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
-            spawnEffects("Rent!\n-€1500");
+            spawnEffects("Rent!\n-€950");
             AudioSource.PlayClipAtPoint(rentAudio, transform.position);
         }
     }

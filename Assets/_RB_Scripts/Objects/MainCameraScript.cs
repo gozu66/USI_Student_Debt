@@ -4,7 +4,8 @@ using System.Collections;
 public class MainCameraScript : MonoBehaviour
 {
     Transform myT;
-    public float scrollSpeed = 0.2f; 
+    public float scrollSpeed = 0.2f;
+    bool scroll = true;
 
     void Start()
     {
@@ -13,6 +14,18 @@ public class MainCameraScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        myT.Translate(Vector2.right * scrollSpeed);
+        if(scroll)
+            myT.Translate(Vector2.right * scrollSpeed);
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+
+        if (col.tag == "Finish")
+        {
+            scroll = false;
+            print("hit");
+
+        }
     }
 }

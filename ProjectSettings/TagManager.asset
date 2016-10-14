@@ -10,6 +10,7 @@ TagManager:
   - Cull
   - Wake Up
   - Home
+  - Wake Up2
   layers:
   - Default
   - TransparentFX

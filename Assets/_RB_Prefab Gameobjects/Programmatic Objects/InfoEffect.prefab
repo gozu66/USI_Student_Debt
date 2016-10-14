@@ -55,7 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d900fa775c44a3142ae45799f0e56e79, type: 3}
+  - {fileID: 2100000, guid: 12f6c25efd260ca45b94083554552ba8, type: 3}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -88,10 +88,10 @@ TextMesh:
   m_FontSize: 50
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 12800000, guid: d900fa775c44a3142ae45799f0e56e79, type: 3}
+  m_Font: {fileID: 12800000, guid: 12f6c25efd260ca45b94083554552ba8, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4279374523
+    rgba: 4293431634
 --- !u!114 &114000011335305222
 MonoBehaviour:
   m_ObjectHideFlags: 1

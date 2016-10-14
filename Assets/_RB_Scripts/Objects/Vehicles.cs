@@ -4,8 +4,7 @@ using System.Collections;
 public class Vehicles : MonoBehaviour
 {
     Rigidbody2D rbody;
-    float speed = 100;
-
+    public float speed = 100;
     bool isAwake;
 
     void Start()
@@ -17,17 +16,16 @@ public class Vehicles : MonoBehaviour
     {
         if (isAwake)
         {
-            rbody.AddForce(Vector2.left * speed, ForceMode2D.Force);
+            rbody.AddForce(-transform.right * speed, ForceMode2D.Force);
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Wake Up")
+        if(other.tag == "Wake Up" )
         {
             isAwake = true;
             this.GetComponent<AudioSource>().enabled = true;
-
         }
         else if(other.tag == "Cull")
         {
