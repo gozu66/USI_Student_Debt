@@ -62,7 +62,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1000012245387798
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,12 +91,12 @@ GameObject:
   - 222: {fileID: 222000011803934196}
   - 114: {fileID: 114000012456061006}
   m_Layer: 5
-  m_Name: Text
+  m_Name: MyText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &114000010334982666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,19 +117,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d900fa775c44a3142ae45799f0e56e79, type: 3}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 12f6c25efd260ca45b94083554552ba8, type: 3}
+    m_FontSize: 37
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
+    m_MaxSize: 48
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FHITP
+  m_Text: "-20000\u20AC"
 --- !u!114 &114000010978081532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6911765, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -150,8 +150,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d900fa775c44a3142ae45799f0e56e79, type: 3}
-    m_FontSize: 12
+    m_Font: {fileID: 12800000, guid: 12f6c25efd260ca45b94083554552ba8, type: 3}
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -162,7 +162,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: -e1500
+  m_Text: "+450 \u20AC"
 --- !u!114 &114000010988938316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -206,13 +206,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012169224510}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8078432, g: 0.90196085, b: 0.8117648, a: 0.791}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -233,13 +233,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012645860164}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.058823533, g: 0.227451, b: 0.2392157, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -247,25 +247,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d900fa775c44a3142ae45799f0e56e79, type: 3}
-    m_FontSize: 19
+    m_Font: {fileID: 12800000, guid: 12f6c25efd260ca45b94083554552ba8, type: 3}
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 41
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You have earned $10.000 since you graduated!
-
-
-    You have paid out $5,000 in expenses!
-
-
-    You are still $10,000 in debt!'
+  m_Text: "You have earned \u20AC6250 since you graduated!\nYou have paid out \u20AC2900
+    in expenses!\nYou are still \u20AC13750 in debt!"
 --- !u!222 &222000010682350112
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -324,8 +319,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25.2}
-  m_SizeDelta: {x: 114.5, y: 28.4}
+  m_AnchoredPosition: {x: -0.48, y: -29.01}
+  m_SizeDelta: {x: 91.1, y: 28.4}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224000011522076044
 RectTransform:
@@ -382,8 +377,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 103.43, y: 30}
+  m_AnchoredPosition: {x: 18.5, y: 0}
+  m_SizeDelta: {x: 150.1, y: 51.32}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224000013059781184
 RectTransform:
