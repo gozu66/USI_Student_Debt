@@ -34,6 +34,14 @@ public class DebtTracker : MonoBehaviour
         debtUI.text = debtString;
         debtUpdateUI.text = "";
     }
+    void Update()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            //Application.OpenURL("https://twitter.com/");
+            //Application.OpenURL("https://www.facebook.com/");
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
