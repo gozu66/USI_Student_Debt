@@ -96,7 +96,7 @@ public class DebtTracker : MonoBehaviour
     Image _image;
     void GenerateAndDisplay()
     {
-        _text.text = "You have earned €" + (totalCoins * 250) + " since you graduated!\nYou have paid out €" + (Mathf.Abs(totalExpenses)) + " in expenses!\nYou are still €" + (20000 - (totalCoins * 250)) + " in debt!";
+        _text.text = "You have earned €" + (totalCoins * 450) + " since you graduated!\nYou have paid out €" + (Mathf.Abs(totalExpenses)) + " in expenses!\nYou are still €" + debt + " in debt!";
 
         _text.enabled = true;
         _image.enabled = true;
