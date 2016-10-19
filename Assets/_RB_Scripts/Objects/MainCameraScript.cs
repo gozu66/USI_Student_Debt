@@ -5,7 +5,7 @@ public class MainCameraScript : MonoBehaviour
 {
     Transform myT;
     public float scrollSpeed = 0.2f;
-    bool scroll = true;
+    bool scroll;
 
     void Start()
     {
@@ -16,6 +16,11 @@ public class MainCameraScript : MonoBehaviour
     {
         if(scroll)
             myT.Translate(Vector2.right * scrollSpeed);
+    }
+
+    public void StarrtScroll()
+    {
+        scroll = true;  
     }
 
     void OnTriggerEnter2D(Collider2D col)
