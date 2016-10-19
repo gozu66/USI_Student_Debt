@@ -95,7 +95,6 @@ public class playerMove : MonoBehaviour
             AudioSource.PlayClipAtPoint(jumpAudio, transform.position);
             rBody.AddForce((Vector2.up * jumpForce), ForceMode2D.Impulse);
 			jumpPressed = true;
-            //animator.ResetTrigger("Jump");
 		}
 	}
 

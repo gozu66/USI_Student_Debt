@@ -22,12 +22,17 @@ public class DebtTracker : MonoBehaviour
     private int debt;
     private string debtString;
 
+    AudioSource music;
+
     void Start()
     {
         _image = GameObject.Find("WinBG").GetComponent<Image>();
         debtUI = GameObject.Find("Debt UI").GetComponent<Text>();
         debtUpdateUI = GameObject.Find("Debt UPDATE UI").GetComponent<Text>();
         _text = GameObject.Find("WinText").GetComponent<Text>();
+        music = GameObject.Find("Music").GetComponent<AudioSource>();
+        //winMusic = GameObject.Find("WinMusic");
+
 
         debt = -20000;
         debtString = debt.ToString() + " €";
@@ -47,6 +52,7 @@ public class DebtTracker : MonoBehaviour
     {
         if (col.tag == "Finish")
         {
+            col.enabled = false;
             GenerateAndDisplay();
         }
     }
@@ -100,5 +106,29 @@ public class DebtTracker : MonoBehaviour
 
         _text.enabled = true;
         _image.enabled = true;
+
+        StartCoroutine("SwapMusic");
+    }
+
+    public AudioClip winFx, winMusic;
+    IEnumerator SwapMusic()
+    {
+        print("EEE");
+        //AudioSource source = music.GetComponent<AudioSource>();
+        //AudioSource source2 = winMusic.GetComponent<AudioSource>();
+        //source.enabled = false;
+        music.Stop();
+        music.clip = winFx;
+        music.Play();
+        /* while(music.isPlaying)
+         {
+             yield return null;
+             music.clip = winMusic;
+             music.Play();
+         }*/
+        yield return new WaitForSeconds(winFx.length - 0.5f);
+        music.clip = winMusic;
+        music.Play();
+
     }
 }
