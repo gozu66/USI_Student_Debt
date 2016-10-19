@@ -20,6 +20,8 @@ public class PlayerDamage : MonoBehaviour
         myt = transform;
         anim = GetComponent<Animator>();
         cameraTransform = Camera.main.transform;
+        rbody.AddForce(new Vector2(35, 35), ForceMode2D.Impulse);
+        //AudioSource.PlayClipAtPoint(damageAudio)
     }
 
     void OnCollisionEnter2D(Collision2D other)

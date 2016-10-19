@@ -24,10 +24,10 @@ public class DebtTracker : MonoBehaviour
 
     void Start()
     {
-        _image = GameObject.Find("Image").GetComponent<Image>();
+        _image = GameObject.Find("WinBG").GetComponent<Image>();
         debtUI = GameObject.Find("Debt UI").GetComponent<Text>();
         debtUpdateUI = GameObject.Find("Debt UPDATE UI").GetComponent<Text>();
-        _text = GameObject.Find("MyText").GetComponent<Text>();
+        _text = GameObject.Find("WinText").GetComponent<Text>();
 
         debt = -20000;
         debtString = debt.ToString() + " €";

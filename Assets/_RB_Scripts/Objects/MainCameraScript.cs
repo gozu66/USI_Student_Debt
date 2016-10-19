@@ -18,7 +18,7 @@ public class MainCameraScript : MonoBehaviour
             myT.Translate(Vector2.right * scrollSpeed);
     }
 
-    public void StarrtScroll()
+    public void StartScroll()
     {
         scroll = true;  
     }

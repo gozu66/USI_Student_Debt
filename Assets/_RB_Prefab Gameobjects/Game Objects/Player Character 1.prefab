@@ -59,7 +59,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010395714812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.11, y: -3.102, z: 0}
+  m_LocalPosition: {x: -3.9, y: -0.827, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -240,11 +240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c1dd3de59470647b1017adf4fa4583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debtUI: {fileID: 114000010334982666, guid: 6e842078006122446b477f89d0dd68b5, type: 2}
-  debtUpdateUI: {fileID: 114000010978081532, guid: 6e842078006122446b477f89d0dd68b5,
-    type: 2}
-  _text: {fileID: 114000012456061006, guid: 6e842078006122446b477f89d0dd68b5, type: 2}
-  _image: {fileID: 114000012384669100, guid: 6e842078006122446b477f89d0dd68b5, type: 2}
 --- !u!114 &114000010729622582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -257,9 +252,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinValue: 450
-  pickup: {fileID: 8300000, guid: d78ef6fc2128adb45b8601024cf3292e, type: 3}
+  pickup: {fileID: 8300000, guid: 7c6f7e136fdf4bf469db57a9f9342fa9, type: 3}
   damageAudio: {fileID: 8300000, guid: 3aa6bbcf891b13345b6a664f793c3136, type: 3}
-  rentAudio: {fileID: 8300000, guid: cd2b4840986037645bc3b661c3054bf3, type: 3}
+  rentAudio: {fileID: 8300000, guid: e956bf2796c9fbf48b91dfd4ee47c5ca, type: 3}
   taxiAudio: {fileID: 8300000, guid: 62a1dcf94bd4aae46b1a3e9af8aed175, type: 3}
   force: 40
   infoItem: {fileID: 1000011660427520, guid: 71fa6919667ed244ca5c8bb3d666cfd6, type: 2}

@@ -26,6 +26,7 @@ public class playerMove : MonoBehaviour
         col = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         cameraTransform = Camera.main.transform;
+
     }
 
     void Update()
