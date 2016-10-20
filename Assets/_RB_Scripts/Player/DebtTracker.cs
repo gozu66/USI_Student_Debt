@@ -48,12 +48,14 @@ public class DebtTracker : MonoBehaviour
         }
     }
 
-    public GameObject social;
+    GameObject social;
+    bool isFinished;
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "Finish")
+        if (col.tag == "Finish" && !isFinished)
         {
-            col.enabled = false;
+            //   col.enabled = false;
+            isFinished = true;
             social.transform.GetChild(0).gameObject.SetActive(true);
             social.transform.GetChild(1).gameObject.SetActive(true);
             GenerateAndDisplay();

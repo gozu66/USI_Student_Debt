@@ -24,24 +24,21 @@ public class PlayerDamage : MonoBehaviour
         cameraTransform = Camera.main.transform;
         rbody.AddForce(new Vector2(35, 35), ForceMode2D.Impulse);
         source = GetComponent<AudioSource>();
-        //AudioSource.PlayClipAtPoint(damageAudio)
         source.clip = damageAudio;
         source.Play();
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.collider.tag == "Screen Edge")
+        if (other.collider.tag == "Screen Edge")
         {
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 0), true));
-            //AudioSource.PlayClipAtPoint(damageAudio, cameraTransform.position);
             source.clip = taxiAudio;
             source.Play();
         }
-        else if(other.collider.tag == "Vehicle")
+        else if (other.collider.tag == "Vehicle")
         {
             spawnEffects("Transport!\n-€50");
-            //AudioSource.PlayClipAtPoint(taxiAudio, cameraTransform.position);
             source.clip = taxiAudio;
             source.Play();
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 1), true));
@@ -69,7 +66,6 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
             spawnEffects("Rent!\n-€950");
-            //AudioSource.PlayClipAtPoint(rentAudio, cameraTransform.position);
             source.clip = rentAudio;
             source.Play();
 
@@ -78,12 +74,32 @@ public class PlayerDamage : MonoBehaviour
         {
             DebtTracker._instance.Cost(coinValue);
             DebtTracker._instance.AddTotalCoins();
-            //AudioSource.PlayClipAtPoint(pickup, cameraTransform.position);
             source.clip = pickup;
             source.Play();
             Destroy(other.gameObject);
         }
-
+        else if (other.tag == "Bank")
+        {
+            StartCoroutine(TakeDamage(new Vector2(0, 0), false));
+            other.GetComponent<Collider2D>().enabled = false;
+            DebtTracker._instance.Cost(-200);
+            DebtTracker._instance.StopAllCoroutines();
+            DebtTracker._instance.StartCoroutine("FadeText");
+            spawnEffects("Interest!\n-€200");
+            source.clip = rentAudio;
+            source.Play();
+        }
+        else if(other.tag == "Pub")
+        {
+            StartCoroutine(TakeDamage(new Vector2(0, 0), false));
+            other.GetComponent<Collider2D>().enabled = false;
+            DebtTracker._instance.Cost(-150);
+            DebtTracker._instance.StopAllCoroutines();
+            DebtTracker._instance.StartCoroutine("FadeText");
+            spawnEffects("Drinks!\n-€150");
+            source.clip = rentAudio;
+            source.Play();
+        }
     }
 
     public float force;
@@ -103,24 +119,13 @@ public class PlayerDamage : MonoBehaviour
     public GameObject infoItem;
     void spawnEffects(string damType)
     {
-        /*
-        for (int i = 0; i < 5; i++)
-        {
-            Vector2 newPos = new Vector2(transform.position.x + Random.Range(-0.5f, 0.5f), transform.position.y + Random.Range(-0.5f, 0.5f));
-            Instantiate(gib, newPos, Quaternion.identity);
-        }
-        */
-
         GameObject blip = Instantiate(infoItem, transform.position, Quaternion.identity)as GameObject;        
         TextMesh tm = blip.GetComponent<TextMesh>();
         tm.text = damType;
-
     }
 
     void FlashSprite()
     {
         anim.SetTrigger("Hurt");
-        //anim.ResetTrigger("Hurt");
     }
-
 }

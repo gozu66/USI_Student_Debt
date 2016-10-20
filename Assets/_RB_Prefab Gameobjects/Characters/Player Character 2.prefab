@@ -258,6 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c1dd3de59470647b1017adf4fa4583, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  social: {fileID: 0}
   winFx: {fileID: 8300000, guid: fef99595133d7974e888c2882055c7f8, type: 3}
   winMusic: {fileID: 8300000, guid: eef7b12147ce3944c801a54d51a4c5c1, type: 3}
 --- !u!114 &114000013390217814

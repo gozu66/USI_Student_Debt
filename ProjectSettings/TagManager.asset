@@ -10,7 +10,8 @@ TagManager:
   - Cull
   - Wake Up
   - Home
-  - Wake Up2
+  - Bank
+  - Pub
   layers:
   - Default
   - TransparentFX
