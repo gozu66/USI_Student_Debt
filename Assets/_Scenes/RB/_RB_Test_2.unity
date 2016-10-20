@@ -1592,6 +1592,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82000013674884556, guid: 941faa5c630a6fa4c910e9bb06894214,
+        type: 2}
+      propertyPath: Priority
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 941faa5c630a6fa4c910e9bb06894214, type: 2}
   m_IsPrefabParent: 0
@@ -2857,7 +2862,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 415822703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.88, y: -0.061317682, z: 0}
+  m_LocalPosition: {x: 90.3, y: -0.061317682, z: 0}
   m_LocalScale: {x: 0.43945423, y: 0.43945423, z: 0.43945423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -7716,10 +7721,6 @@ Prefab:
     - target: {fileID: 4000012930571056, guid: 0cafa399ec2a17641bc8bc170a1556c6, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000012154614258, guid: 0cafa399ec2a17641bc8bc170a1556c6, type: 2}
-      propertyPath: m_Name
-      value: Taxi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0cafa399ec2a17641bc8bc170a1556c6, type: 2}

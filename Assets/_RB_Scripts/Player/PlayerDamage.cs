@@ -10,6 +10,8 @@ public class PlayerDamage : MonoBehaviour
     Transform cameraTransform;
 
     public int coinValue;
+
+    AudioSource source;
     public AudioClip pickup;
 
     public AudioClip damageAudio, rentAudio, taxiAudio;
@@ -21,7 +23,10 @@ public class PlayerDamage : MonoBehaviour
         anim = GetComponent<Animator>();
         cameraTransform = Camera.main.transform;
         rbody.AddForce(new Vector2(35, 35), ForceMode2D.Impulse);
+        source = GetComponent<AudioSource>();
         //AudioSource.PlayClipAtPoint(damageAudio)
+        source.clip = damageAudio;
+        source.Play();
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -29,12 +34,16 @@ public class PlayerDamage : MonoBehaviour
         if(other.collider.tag == "Screen Edge")
         {
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 0), true));
-            AudioSource.PlayClipAtPoint(damageAudio, cameraTransform.position);
+            //AudioSource.PlayClipAtPoint(damageAudio, cameraTransform.position);
+            source.clip = taxiAudio;
+            source.Play();
         }
         else if(other.collider.tag == "Vehicle")
         {
             spawnEffects("Transport!\n-€50");
-            AudioSource.PlayClipAtPoint(taxiAudio, cameraTransform.position);
+            //AudioSource.PlayClipAtPoint(taxiAudio, cameraTransform.position);
+            source.clip = taxiAudio;
+            source.Play();
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 1), true));
             DebtTracker._instance.CountTaxi();
             DebtTracker._instance.Cost(-50);
@@ -60,13 +69,18 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
             spawnEffects("Rent!\n-€950");
-            AudioSource.PlayClipAtPoint(rentAudio, cameraTransform.position);
+            //AudioSource.PlayClipAtPoint(rentAudio, cameraTransform.position);
+            source.clip = rentAudio;
+            source.Play();
+
         }
         if (other.tag == "Coin")
         {
             DebtTracker._instance.Cost(coinValue);
             DebtTracker._instance.AddTotalCoins();
-            AudioSource.PlayClipAtPoint(pickup, cameraTransform.position);
+            //AudioSource.PlayClipAtPoint(pickup, cameraTransform.position);
+            source.clip = pickup;
+            source.Play();
             Destroy(other.gameObject);
         }
 

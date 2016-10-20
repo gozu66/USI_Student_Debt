@@ -17,6 +17,7 @@ public class playerMove : MonoBehaviour
 
     Animator animator;
     public AudioClip jumpAudio;
+    AudioSource source;
 
     Transform cameraTransform;
 
@@ -26,7 +27,7 @@ public class playerMove : MonoBehaviour
         col = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         cameraTransform = Camera.main.transform;
-
+        source = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -102,6 +103,8 @@ public class playerMove : MonoBehaviour
 
     void Footstep()
     {
-        AudioSource.PlayClipAtPoint(footSteps[Random.Range(0, footSteps.Length)], transform.position, 10.0f);
+        //AudioSource.PlayClipAtPoint(footSteps[Random.Range(0, footSteps.Length)], transform.position, 10.0f);
+        source.clip = footSteps[Random.Range(0, footSteps.Length)];
+        source.Play();
     }
 }
