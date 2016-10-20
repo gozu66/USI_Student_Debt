@@ -11,9 +11,9 @@ public class PlayerDamage : MonoBehaviour
 
     public int coinValue;
 
-    AudioSource source;
+    AudioSource[] sources;
+    AudioSource pickupSource, damageSource;
     public AudioClip pickup;
-
     public AudioClip damageAudio, rentAudio, taxiAudio;
 
     void Start()
@@ -23,9 +23,9 @@ public class PlayerDamage : MonoBehaviour
         anim = GetComponent<Animator>();
         cameraTransform = Camera.main.transform;
         rbody.AddForce(new Vector2(35, 35), ForceMode2D.Impulse);
-        source = GetComponent<AudioSource>();
-        source.clip = damageAudio;
-        source.Play();
+        sources = GetComponents<AudioSource>();
+        pickupSource = sources[2];
+        damageSource = sources[3];
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -33,14 +33,14 @@ public class PlayerDamage : MonoBehaviour
         if (other.collider.tag == "Screen Edge")
         {
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 0), true));
-            source.clip = taxiAudio;
-            source.Play();
+            damageSource.clip = taxiAudio;
+            damageSource.Play();
         }
         else if (other.collider.tag == "Vehicle")
         {
             spawnEffects("Transport!\n-€50");
-            source.clip = taxiAudio;
-            source.Play();
+            damageSource.clip = taxiAudio;
+            damageSource.Play();
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 1), true));
             DebtTracker._instance.CountTaxi();
             DebtTracker._instance.Cost(-50);
@@ -66,16 +66,16 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
             spawnEffects("Rent!\n-€950");
-            source.clip = rentAudio;
-            source.Play();
+            damageSource.clip = rentAudio;
+            damageSource.Play();
 
         }
         if (other.tag == "Coin")
         {
             DebtTracker._instance.Cost(coinValue);
             DebtTracker._instance.AddTotalCoins();
-            source.clip = pickup;
-            source.Play();
+            pickupSource.clip = pickup;
+            pickupSource.Play();
             Destroy(other.gameObject);
         }
         else if (other.tag == "Bank")
@@ -86,8 +86,8 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
             spawnEffects("Interest!\n-€200");
-            source.clip = rentAudio;
-            source.Play();
+            damageSource.clip = rentAudio;
+            damageSource.Play();
         }
         else if(other.tag == "Pub")
         {
@@ -97,8 +97,8 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
             spawnEffects("Drinks!\n-€150");
-            source.clip = rentAudio;
-            source.Play();
+            damageSource.clip = rentAudio;
+            damageSource.Play();
         }
     }
 

@@ -17,7 +17,8 @@ public class playerMove : MonoBehaviour
 
     Animator animator;
     public AudioClip jumpAudio;
-    AudioSource source;
+    AudioSource[] sources;
+    AudioSource footstepSource, jumpSource;
 
     Transform cameraTransform;
 
@@ -27,7 +28,10 @@ public class playerMove : MonoBehaviour
         col = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         cameraTransform = Camera.main.transform;
-        source = GetComponent<AudioSource>();
+        sources = GetComponents<AudioSource>();
+        footstepSource = sources[0];
+        jumpSource = sources[1];
+        jumpSource.clip = jumpAudio;
     }
 
     void Update()
@@ -59,13 +63,10 @@ public class playerMove : MonoBehaviour
         }
         if (canMove)
         {
-
             if (Input.GetAxis("Horizontal") != 0)
             {
                 float move = Input.GetAxis("Horizontal");
-
-                rBody.velocity = new Vector2(move * currentSpeed, rBody.velocity.y);
-
+                rBody.velocity = new Vector2(move * currentSpeed, rBody.velocity.y);            
                 if (move > 0 && facingLeft)
                 {
                     Flip();
@@ -76,7 +77,6 @@ public class playerMove : MonoBehaviour
                 }
             }
         }
-
         currentSpeed = (GroundChecker.playerIsGrounded) ? maxSpeed : airControlSpeed;
     }
 
@@ -93,18 +93,17 @@ public class playerMove : MonoBehaviour
 		if(GroundChecker.playerIsGrounded)
 		{
             animator.SetTrigger("Jump");
-            AudioSource.PlayClipAtPoint(jumpAudio, transform.position);
+            //AudioSource.PlayClipAtPoint(jumpAudio, transform.position);
+            jumpSource.Play();
             rBody.AddForce((Vector2.up * jumpForce), ForceMode2D.Impulse);
 			jumpPressed = true;
 		}
 	}
 
     public AudioClip[] footSteps;
-
     void Footstep()
     {
-        //AudioSource.PlayClipAtPoint(footSteps[Random.Range(0, footSteps.Length)], transform.position, 10.0f);
-        source.clip = footSteps[Random.Range(0, footSteps.Length)];
-        source.Play();
+        footstepSource.clip = footSteps[Random.Range(0, footSteps.Length)];
+        footstepSource.Play();
     }
 }

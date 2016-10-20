@@ -39,14 +39,6 @@ public class DebtTracker : MonoBehaviour
         debtUI.text = debtString;
         debtUpdateUI.text = "";
     }
-    void Update()
-    {
-        if(Input.GetMouseButtonDown(0))
-        {
-            //Application.OpenURL("https://twitter.com/");
-            //Application.OpenURL("https://www.facebook.com/");
-        }
-    }
 
     GameObject social;
     bool isFinished;
@@ -54,7 +46,6 @@ public class DebtTracker : MonoBehaviour
     {
         if (col.tag == "Finish" && !isFinished)
         {
-            //   col.enabled = false;
             isFinished = true;
             social.transform.GetChild(0).gameObject.SetActive(true);
             social.transform.GetChild(1).gameObject.SetActive(true);
