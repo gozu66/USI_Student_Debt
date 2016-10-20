@@ -12,6 +12,7 @@ TagManager:
   - Home
   - Bank
   - Pub
+  - Diner
   layers:
   - Default
   - TransparentFX
