@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Player1
+  m_Name: Player3
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Grounded
@@ -256,7 +256,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.25
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -357,7 +357,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 1c4fcf8e9470644488e915f122f32562, type: 2}
+  m_Motion: {fileID: 7400000, guid: 88a8aa07afbc9164d8cd9ad9cd8d97e3, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -409,7 +409,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: eee3322cb30ff914294b4ce3069d9ef4, type: 2}
+  m_Motion: {fileID: 7400000, guid: ed8b5fd1b3e93ee4ea52bed83b4c9296, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -435,7 +435,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c4434ceb1acc3954592b1e3f4e6717c7, type: 2}
+  m_Motion: {fileID: 7400000, guid: 714a69b0f1be6094ba1ed6458fb31dd8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

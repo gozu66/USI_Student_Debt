@@ -33,7 +33,7 @@ public class PlayerDamage : MonoBehaviour
         if (other.collider.tag == "Screen Edge")
         {
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 0), true));
-            damageSource.clip = taxiAudio;
+            damageSource.clip = damageAudio;
             damageSource.Play();
         }
         else if (other.collider.tag == "Vehicle")
@@ -100,6 +100,18 @@ public class PlayerDamage : MonoBehaviour
             damageSource.clip = rentAudio;
             damageSource.Play();
         }
+        else if (other.tag == "Diner")
+        {
+            StartCoroutine(TakeDamage(new Vector2(0, 0), false));
+            other.GetComponent<Collider2D>().enabled = false;
+            DebtTracker._instance.Cost(-150);
+            DebtTracker._instance.StopAllCoroutines();
+            DebtTracker._instance.StartCoroutine("FadeText");
+            spawnEffects("Food!\n-€50");
+            damageSource.clip = rentAudio;
+            damageSource.Play();
+        }
+
     }
 
     public float force;

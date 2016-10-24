@@ -47,8 +47,13 @@ public class DebtTracker : MonoBehaviour
         if (col.tag == "Finish" && !isFinished)
         {
             isFinished = true;
-            social.transform.GetChild(0).gameObject.SetActive(true);
-            social.transform.GetChild(1).gameObject.SetActive(true);
+            //social.transform.GetChild(0).gameObject.SetActive(true);
+            //social.transform.GetChild(1).gameObject.SetActive(true);
+            //Transform[] myTs = social.transform.GetChild
+            for(int i = 0; i < social.transform.childCount; i++)
+            {
+                social.transform.GetChild(i).gameObject.SetActive(true);
+            }
             GenerateAndDisplay();
         }
     }
