@@ -4,13 +4,16 @@ tpsheetFileNames:
 - Assets/_Resources/Sprites/Player_01/Player1.tpsheet
 - Assets/_Resources/Sprites/Player_02/Player02.tpsheet
 - Assets/_Resources/Sprites/Player_03/Player_03.tpsheet
+- Assets/_Resources/Sprites/Player_04/Player_04.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
 - Assets/_Resources/Sprites/Player_01/Player1.png
 - Assets/_Resources/Sprites/Player_02/Player02.png
 - Assets/_Resources/Sprites/Player_03/Player_03.png
+- Assets/_Resources/Sprites/Player_04/Player_04.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
 - 
 - 
 - 
