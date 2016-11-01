@@ -27,6 +27,7 @@ public class DebtTracker : MonoBehaviour
     void Start()
     {
         _image = GameObject.Find("WinBG").GetComponent<Image>();
+        _image2 = GameObject.Find("winImg").GetComponent<Image>();
         debtUI = GameObject.Find("Debt UI").GetComponent<Text>();
         debtUpdateUI = GameObject.Find("Debt UPDATE UI").GetComponent<Text>();
         _text = GameObject.Find("WinText").GetComponent<Text>();
@@ -100,13 +101,14 @@ public class DebtTracker : MonoBehaviour
     }
 
     Text _text;
-    Image _image;
+    Image _image, _image2;
     void GenerateAndDisplay()
     {
-        _text.text = "You have earned €" + (totalCoins * 450) + " since you graduated!\nYou have paid out €" + (Mathf.Abs(totalExpenses)) + " in expenses!\nYou are still €" + debt + " in debt!";
+        _text.text = "YOU HAVE EARNED €" + (totalCoins * 450) + " SINCE GRADUATION!\n\nYOU HAVE PAID €" + (Mathf.Abs(totalExpenses)) + " IN EXPENSES!\n\nYOU ARE STILL €" + Mathf.Abs(debt) + " IN DEBT!";
 
         _text.enabled = true;
         _image.enabled = true;
+        _image2.enabled = true;
 
         StartCoroutine("SwapMusic");
     }
@@ -118,6 +120,7 @@ public class DebtTracker : MonoBehaviour
         music.clip = winFx;
         music.Play();
         yield return new WaitForSeconds(winFx.length - 0.5f);
+        music.volume = 0.6f;
         music.clip = winMusic;
         music.Play();
 
