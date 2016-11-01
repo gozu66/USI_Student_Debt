@@ -54,8 +54,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modifier: 0.02
-  farLeft: -10
-  farRight: 110
+  farLeft: 0
+  farRight: 0
 --- !u!114 &114000013567412378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -96,7 +96,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1105307725
   m_SortingOrder: -5
-  m_Sprite: {fileID: 21300004, guid: 48cefdba0b839d147b37139de912c8df, type: 3}
-  m_Color: {r: 0.875, g: 0.875, b: 0.875, a: 0.559}
+  m_Sprite: {fileID: 21300000, guid: da1255ae7a0581745923e87f15caf803, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
