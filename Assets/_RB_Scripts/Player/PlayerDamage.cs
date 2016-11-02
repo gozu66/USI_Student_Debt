@@ -96,7 +96,7 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.Cost(-150);
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
-            spawnEffects("Drinks!\n-€150");
+            spawnEffects("Bills!\n-€150");
             damageSource.clip = rentAudio;
             damageSource.Play();
         }
