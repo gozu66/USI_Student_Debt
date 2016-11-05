@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 114000011619684562}
   - 61: {fileID: 61000012088949240}
   - 82: {fileID: 82000011534769564}
+  - 114: {fileID: 114000010426595228}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -150,7 +151,7 @@ GameObject:
   - 61: {fileID: 61000012339514154}
   m_Layer: 1
   m_Name: ScreenEdgeLeft
-  m_TagString: Screen Edge
+  m_TagString: Rear Screen Edge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -455,6 +456,20 @@ MonoBehaviour:
   - {fileID: 1000011268560010, guid: 5b555e2166f27374ebe27a14e31a172c, type: 2}
   - {fileID: 1000010465051556, guid: 797bb8b718e6c9d43a0910db3f4d9d42, type: 2}
   - {fileID: 1000011199210556, guid: 31af71ab587392b4d91ca4bc812aec4c, type: 2}
+--- !u!114 &114000010426595228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478a2083ad114a07d000fbfb8d76c639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: e9ba2083ad114a07d000fbfb8d76c639, type: 3}
+  blurAmount: 0.12
+  extraBlur: 0
 --- !u!114 &114000011619684562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -466,4 +481,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b7c4b6ee771b64e949ea29bbc71547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.05
+  scrollSpeed: 0.08

@@ -13,6 +13,8 @@ TagManager:
   - Bank
   - Pub
   - Diner
+  - Wake Up2
+  - Rear Screen Edge
   layers:
   - Default
   - TransparentFX

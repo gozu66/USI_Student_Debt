@@ -507,9 +507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e59ce243ba5f77441955828486b890d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  airControlSpeed: 3
-  jumpForce: 55
   layerMask:
     serializedVersion: 2
     m_Bits: 4294966783

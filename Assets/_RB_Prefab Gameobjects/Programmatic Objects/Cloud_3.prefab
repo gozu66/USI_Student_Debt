@@ -21,8 +21,9 @@ GameObject:
   - 4: {fileID: 4000012025895208}
   - 212: {fileID: 212000011254542264}
   - 114: {fileID: 114000010551403490}
-  - 114: {fileID: 114000013567412378}
-  m_Layer: 0
+  - 61: {fileID: 61000010537973384}
+  - 114: {fileID: 114000013439707186}
+  m_Layer: 10
   m_Name: Cloud_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,6 +43,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &61000010537973384
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011268560010}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 4.5, y: 3.5}
 --- !u!114 &114000010551403490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -56,7 +71,7 @@ MonoBehaviour:
   modifier: 0.02
   farLeft: 0
   farRight: 0
---- !u!114 &114000013567412378
+--- !u!114 &114000013439707186
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -64,7 +79,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011268560010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 524ec2abe5453084cb46dfc10a3f1b77, type: 3}
+  m_Script: {fileID: 11500000, guid: 70fb1ba6b1bd1e243b317c1d69d655d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212000011254542264

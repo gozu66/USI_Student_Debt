@@ -32,13 +32,25 @@ public class PlayerDamage : MonoBehaviour
     {
         if (other.collider.tag == "Screen Edge")
         {
+
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 0), true));
             damageSource.clip = damageAudio;
             damageSource.Play();
         }
+        else if (other.collider.tag == "Rear Screen Edge")
+        {
+            spawnEffects("Ouch!\n-€50", 2);
+
+            StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 0), true));
+            damageSource.clip = damageAudio;
+            damageSource.Play();
+            DebtTracker._instance.Cost(-50);
+
+        }
+
         else if (other.collider.tag == "Vehicle")
         {
-            spawnEffects("Transport!\n-€50");
+            spawnEffects("Transport!\n-€50", 0);
             damageSource.clip = taxiAudio;
             damageSource.Play();
             StartCoroutine(TakeDamage(new Vector2(myt.position.x - other.transform.position.x, 1), true));
@@ -65,7 +77,7 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.Cost(-950);
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
-            spawnEffects("Rent!\n-€950");
+            spawnEffects("Rent!\n-€950", 0);
             damageSource.clip = rentAudio;
             damageSource.Play();
 
@@ -85,7 +97,7 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.Cost(-200);
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
-            spawnEffects("Interest!\n-€200");
+            spawnEffects("Interest!\n-€200", 0);
             damageSource.clip = rentAudio;
             damageSource.Play();
         }
@@ -96,7 +108,7 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.Cost(-150);
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
-            spawnEffects("Bills!\n-€150");
+            spawnEffects("Bills!\n-€150", 0);
             damageSource.clip = rentAudio;
             damageSource.Play();
         }
@@ -107,7 +119,7 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.Cost(-150);
             DebtTracker._instance.StopAllCoroutines();
             DebtTracker._instance.StartCoroutine("FadeText");
-            spawnEffects("Food!\n-€50");
+            spawnEffects("Food!\n-€50", 0);
             damageSource.clip = rentAudio;
             damageSource.Play();
         }
@@ -129,9 +141,10 @@ public class PlayerDamage : MonoBehaviour
     }
 
     public GameObject infoItem;
-    void spawnEffects(string damType)
+    void spawnEffects(string damType, int xOffset)
     {
-        GameObject blip = Instantiate(infoItem, transform.position, Quaternion.identity)as GameObject;        
+        Vector2 v = new Vector2(transform.position.x + xOffset, transform.position.y);
+        GameObject blip = Instantiate(infoItem, v, Quaternion.identity)as GameObject;        
         TextMesh tm = blip.GetComponent<TextMesh>();
         tm.text = damType;
     }
