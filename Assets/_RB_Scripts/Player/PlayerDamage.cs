@@ -9,7 +9,7 @@ public class PlayerDamage : MonoBehaviour
     Animator anim;
     Transform cameraTransform;
 
-    public int coinValue;
+    int coinValue = 250;
 
     AudioSource[] sources;
     AudioSource pickupSource, damageSource;

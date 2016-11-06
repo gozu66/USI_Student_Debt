@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Link : MonoBehaviour 
 {
-    public string facebook, twitter;
+    public string facebook, twitter, USI, USIfb, USItw;
 
 	public void OpenLinkJSPluginFacebook()
 	{
@@ -20,7 +20,26 @@ public class Link : MonoBehaviour
         #endif
     }
 
+    public void OpenLinkJSPluginUSI()
+    {
+        #if !UNITY_EDITOR
+		openWindow(USI);
+        #endif
+    }
 
+    public void OpenLinkJSPluginUSIFacebook()
+    {
+        #if !UNITY_EDITOR
+		openWindow(USIfb);
+        #endif
+    }
+
+    public void OpenLinkJSPluginUSITwitter()
+    {
+        #if !UNITY_EDITOR
+		openWindow(USItw);
+        #endif
+    }
 
     [DllImport("__Internal")]
 	private static extern void openWindow(string url);

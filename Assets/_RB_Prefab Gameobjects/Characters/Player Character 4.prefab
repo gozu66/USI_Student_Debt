@@ -90,7 +90,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011293420410}
   m_UseAutoMass: 0
-  m_Mass: 5
+  m_Mass: 10
   m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1.8
@@ -465,7 +465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea7b96d73ca72249924b797b3b7c8e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinValue: 450
   pickup: {fileID: 8300000, guid: 7c6f7e136fdf4bf469db57a9f9342fa9, type: 3}
   damageAudio: {fileID: 8300000, guid: 3aa6bbcf891b13345b6a664f793c3136, type: 3}
   rentAudio: {fileID: 8300000, guid: e956bf2796c9fbf48b91dfd4ee47c5ca, type: 3}
@@ -483,9 +482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e59ce243ba5f77441955828486b890d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  airControlSpeed: 3
-  jumpForce: 55
   layerMask:
     serializedVersion: 2
     m_Bits: 4294966783

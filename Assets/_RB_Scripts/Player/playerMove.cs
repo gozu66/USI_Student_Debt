@@ -3,7 +3,7 @@ using System.Collections;
 
 public class playerMove : MonoBehaviour 
 {
-	float maxSpeed = 10, airControlSpeed = 6, jumpForce = 65;
+	float maxSpeed = 10, airControlSpeed = 6, jumpForce = 140;
     private float currentSpeed;
 
     bool isMoving, facingLeft, jumpPressed = false, onSlope;
