@@ -57,6 +57,8 @@ public class PlayerDamage : MonoBehaviour
             DebtTracker._instance.CountTaxi();
             DebtTracker._instance.Cost(-50);
             other.collider.isTrigger = true;
+            StartCoroutine("shake");
+            print(other.collider.name);
         }
     }
 
@@ -80,6 +82,7 @@ public class PlayerDamage : MonoBehaviour
             spawnEffects("Rent!\n-€950", 0);
             damageSource.clip = rentAudio;
             damageSource.Play();
+            
 
         }
         if (other.tag == "Coin")
@@ -131,7 +134,7 @@ public class PlayerDamage : MonoBehaviour
     {
         FlashSprite();
 
-        if(haltPlayer)playerMove.canMove = false;
+        if (haltPlayer) playerMove.canMove = false;
 
         rbody.velocity = Vector2.zero;
         rbody.AddForce(hitDir * force, ForceMode2D.Impulse);
@@ -153,4 +156,49 @@ public class PlayerDamage : MonoBehaviour
     {
         anim.SetTrigger("Hurt");
     }
+
+    /*  float i = 0.0f;
+      IEnumerator shake()
+      {
+          while (i < 1)
+          {
+              Vector3 cam = Camera.main.transform.position;
+              Camera.main.transform.position = Random.insideUnitCircle;
+              Camera.main.transform.position.z = -10;
+              i += 0.1f;
+              yield return null;
+          }         
+      }*/
+
+    float duration = 0.25f;
+    float magnitude = 0.5f;
+    IEnumerator shake()
+    {
+
+        float elapsed = 0.0f;
+
+        Vector3 originalCamPos = Camera.main.transform.position;
+
+        while (elapsed < duration)
+        {
+
+            elapsed += Time.deltaTime;
+
+            float percentComplete = elapsed / duration;
+            float damper = 1.0f - Mathf.Clamp(4.0f * percentComplete - 3.0f, 0.0f, 1.0f);
+
+            // map value to [-1, 1]
+            //float x = transform.position.x + Random.value * 2.0f - 1.0f;
+            float y = (Random.value * 2.0f - 1.0f);
+            //x *= magnitude * damper;
+            y *= magnitude * damper;
+
+            Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, y, originalCamPos.z);
+
+            yield return null;
+        }
+
+        Camera.main.transform.position = Camera.main.transform.parent.position;
+    }
+
 }

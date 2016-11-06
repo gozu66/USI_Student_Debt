@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator PlayerSelect()
     {
         yield return new WaitForSeconds(1);
-        Camera.main.GetComponent<MainCameraScript>().StartScroll();
+        Camera.main.transform.parent.GetComponent<MainCameraScript>().StartScroll();
         Vector3 pos = new Vector3(-7, -2, 0);
         Instantiate(Players[charNum], pos, Quaternion.identity);
     }
